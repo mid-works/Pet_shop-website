@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome Pet Shop</title>
+    <link rel="stylesheet" href="Page.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <h1><i class="fas fa-paw"></i> Pawsome Pet Shop</h1>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <button id="modeToggle"><i class="fas fa-moon"></i> Dark Mode</button>
+            <button id="navToggle" class="nav-toggle-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-image-slider">
+                <img src="./asscts/cats.png" alt="">
+                <img src="./asscts/pups.png" alt="">
+                <img src="./asscts/fish.png" alt="">
+                <img src="./asscts/ham.png" alt="">
+                
+            </div>
+            <div class="hero-content">
+                <h2>Welcome to Pawsome Pet Shop!</h2>
+                <p>Your one-stop destination for all your beloved pet's needs.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+            <div class="slider-nav">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2><i class="fas fa-info-circle"></i> About Us</h2>
+            <p>At Pawsome Pet Shop, we are passionate about pets. We offer a wide range of high-quality products and services to ensure your furry, feathered, or scaled friends are happy and healthy.</p>
+            <p>Our team consists of dedicated animal lovers with years of experience in pet care and nutrition, committed to providing the best for your companions.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3><i class="fas fa-heart"></i> Passionate Care</h3>
+                    <p>Every pet deserves the best. We provide products and advice with love and dedication.</p>
+                </div>
+                <div class="about-item">
+                    <h3><i class="fas fa-shield-alt"></i> Quality Assured</h3>
+                    <p>We source only the highest quality products for safety and well-being.</p>
+                </div>
+                <div class="about-item">
+                    <h3><i class="fas fa-users"></i> Expert Team</h3>
+                    <p>Our experienced staff are always ready to help you make the best choices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="container">
+            <h2><i class="fas fa-box"></i> Our Products</h2>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">All Pets</button>
+                <button class="category-btn" data-category="dogs"><i class="fas fa-dog"></i> Dogs</button>
+                <button class="category-btn" data-category="cats"><i class="fas fa-cat"></i> Cats</button>
+                <button class="category-btn" data-category="birds"><i class="fas fa-dove"></i> Birds</button>
+                <button class="category-btn" data-category="fish"><i class="fas fa-fish"></i> Fish</button>
+            </div>
+            <div class="product-grid">
+                <!-- Products will be filtered/displayed here -->
+                <div class="product-item" data-category="dogs">
+                    <h3>Premium Dog Food</h3>
+                    <img src="./asscts/products/dfood.png" alt="Dog Food">
+                    <p>Nutritious and delicious meals for your canine companion.</p>
+                    <span class="price">$35.99</span>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="cats">
+                    <h3>Interactive Cat Toys</h3>
+                    <img src="./asscts/products/ctoy.png" alt="Cat Toy">
+                    <p>Keep your felines entertained and stylish.</p>
+                    <span class="price">$12.50</span>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="fish">
+                    <h3>Aquarium Heater</h3>
+                    <img src="./asscts/products/aqrium.png" alt="Aquarium Heater">
+                    <p>Everything you need for a thriving aquatic environment.</p>
+                    <span class="price">$29.99</span>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="birds">
+                    <h3>Bird Cage</h3>
+                    <img src="./asscts/products/cage.png" alt="Bird Cage">
+                    <p>Comfortable and spacious homes for your feathered friends.</p>
+                    <span class="price">$89.00</span>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="dogs">
+                    <h3>Dog Leash Set</h3>
+                    <img src="./asscts/products/leash.png" alt="Dog Leash">
+                    <p>Durable leashes and collars for daily walks.</p>
+                    <span class="price">$24.00</span>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="cats">
+                    <h3>Cat Scratching Post</h3>
+                    <img src="./asscts/products/spad.png" alt="Cat Scratching Post">
+                    <p>Protect your furniture and keep your cat happy.</p>
+                    <span class="price">$45.00</span>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="container">
+            <h2><i class="fas fa-comment-alt"></i> What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"Pawsome Pet Shop has the best selection of natural dog food. My beagle has never been healthier!"</p>
+                    <p class="customer-name">- Jane Doe</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I always find unique toys for my cats here. The staff are so knowledgeable and friendly."</p>
+                    <p class="customer-name">- John Smith</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Excellent service and fast delivery! My fish tank looks amazing with their supplies."</p>
+                    <p class="customer-name">- Sarah Lee</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <p><i class="fas fa-envelope-open-text"></i> Email: info@pawsomepetshop.com</p>
+            <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> Address: 123 Pet Lane, Animal City, PA 12345</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pawsome Pet Shop. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('modeToggle');
+        const body = document.body;
+
+        modeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('dark-mode')) {
+                modeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            } else {
+                modeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            }
+        });
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        navToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('nav-open');
+            // Change icon
+            if (mainNav.classList.contains('nav-open')) {
+                navToggle.innerHTML = '<i class="fas fa-times"></i>'; // 'X' icon
+            } else {
+                navToggle.innerHTML = '<i class="fas fa-bars"></i>'; // Hamburger icon
+            }
+        });
+
+        // Close nav when a link is clicked (for mobile)
+        document.querySelectorAll('#mainNav ul li a').forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 768) { // Adjust breakpoint as needed
+                    mainNav.classList.remove('nav-open');
+                    navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+
+        // Hero Image Slider
+        const heroSlider = document.querySelector('.hero-image-slider');
+        const prevSlideBtn = document.querySelector('.prev-slide');
+        const nextSlideBtn = document.querySelector('.next-slide');
+        const heroImages = [
+            'https://via.placeholder.com/1500x500?text=Happy+Dog', // Image 1
+            'https://via.placeholder.com/1500x500?text=Playful+Cat', // Image 2
+            'https://via.placeholder.com/1500x500?text=Colorful+Fish', // Image 3
+            'https://via.placeholder.com/1500x500?text=Cute+Hamster'  // Image 4
+        ];
+        let currentImageIndex = 0;
+
+        function updateHeroImage() {
+            heroSlider.style.backgroundImage = `url('${heroImages[currentImageIndex]}')`;
+        }
+
+        prevSlideBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + heroImages.length) % heroImages.length;
+            updateHeroImage();
+        });
+
+        nextSlideBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+            updateHeroImage();
+        });
+
+        // Auto-slide every 5 seconds
+        let autoSlideInterval = setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+            updateHeroImage();
+        }, 5000);
+
+        // Pause auto-slide on hover
+        heroSlider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+        heroSlider.addEventListener('mouseleave', () => {
+            autoSlideInterval = setInterval(() => {
+                currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+                updateHeroImage();
+            }, 5000);
+        });
+
+
+        // Product Filtering
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const productItems = document.querySelectorAll('.product-item');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to the clicked button
+                button.classList.add('active');
+
+                const category = button.dataset.category;
+
+                productItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
